@@ -1,0 +1,40 @@
+<div id="header">
+    <h1><font size="4">Welcome {{ user_html['nickname'] }}</font></h1>
+    <hr />
+</div>
+<html>
+  <head>
+    <title>{{ title }} - Welcome </title>
+    <style>
+    html {
+        font-family: "Arial";
+        background: white;
+    }
+    body {
+        background: lightgrey;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    #header {
+        padding-top: 5;
+        background: lightsteelblue;
+    }
+    #inner-header {
+        padding-left: 10;
+    }
+    #main{
+        padding-left: 10;
+    }
+    </style>
+  </head>
+  <body>
+      <h1><font size="3">This page is accepting a single word and deriving all possible anagrams</font></h1>
+      <h1><font size="3">Please enter your word here</font></h1>
+      <form action="/" method="POST" name="permutation">
+        <input type="text" value="" name='perm'>
+        <p><input type="submit" value="Submit"></p>
+      </form>
+  </body>
+</html
+
+
